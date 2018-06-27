@@ -27,8 +27,19 @@ public class CameraMovement : MonoBehaviour
     {
         if (canRotate)
         {
-            cameraXRotation -= Input.GetAxis("Horizontal") * sensitivity;
-            cameraYRotation += Input.GetAxis("Vertical") * sensitivity;
+            // Camera movement is managed by other functions.
+            // Camera movement functions can be mapped to UI Buttons for
+            // mobile version.
+            if (Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))
+                TurnUp();
+            else if (!Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.S))
+                TurnDown();
+
+            if (Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
+                TurnRight();
+            else if (!Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.A))
+                TurnLeft();
+
             cameraYRotation = Mathf.Clamp(cameraYRotation, 5, 75);
 
             cameraPosZ -= Input.GetAxis("Mouse ScrollWheel") * sensitivity * 10;
@@ -40,5 +51,25 @@ public class CameraMovement : MonoBehaviour
 
             transform.LookAt(cameraAnchor);
         }
+    }
+
+    public void TurnLeft()
+    {
+        cameraXRotation += 1 * sensitivity;
+    }
+
+    public void TurnRight()
+    {
+        cameraXRotation -= 1 * sensitivity;
+    }
+
+    public void TurnUp()
+    {
+        cameraYRotation += 1 * sensitivity;
+    }
+
+    public void TurnDown()
+    {
+        cameraYRotation -= 1 * sensitivity;
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabbit Empire", "Rabbit Empire.csproj", "{533FDA88-5BE3-2418-073A-7C762B08D1E3}"
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabbit Empire", "Assembly-CSharp.csproj", "{28922355-B05C-39D3-5396-49E0574B88B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{533FDA88-5BE3-2418-073A-7C762B08D1E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{533FDA88-5BE3-2418-073A-7C762B08D1E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{533FDA88-5BE3-2418-073A-7C762B08D1E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{533FDA88-5BE3-2418-073A-7C762B08D1E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28922355-B05C-39D3-5396-49E0574B88B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28922355-B05C-39D3-5396-49E0574B88B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28922355-B05C-39D3-5396-49E0574B88B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28922355-B05C-39D3-5396-49E0574B88B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
